@@ -1,6 +1,3 @@
-import Express from 'express';
-import fileUpload from 'express-fileupload'; 
-
 var express = require("express");
 var app = express();
 var fs = require("fs");
