@@ -18,9 +18,9 @@ var server = app.listen(8081, function () {
   console.log("Example app listening at http://%s:%s", host, port);
 });
 
-// app.get('/', function(req, res) {
-//     console.log("Cookies: ", req.cookies)
-//  })
+app.get('/', function(req, res) {
+    console.log("Cookies: ", req.cookies)
+ })
 
 // app.get('/index.html', function (req, res) {
 //     res.sendFile( __dirname + "/" + "index.html" );
