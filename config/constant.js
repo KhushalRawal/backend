@@ -12,5 +12,6 @@ export const HTTP_STATUS_CODE = {
 export const ERROR_MESSAGE = {
     INTERNAL_SERVER_ERROR: 'Something went wrong! Please try again later.',
     UNAUTHORISED:'Invaild user credentials',
-    USEREXISTS:'User already exists'
+    USEREXISTS:'User already exists',
+    NOT_FOUND:'User not found',
 }
