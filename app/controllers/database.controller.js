@@ -9,9 +9,9 @@ export const createTable = async (request,response) => {
             last_name VARCHAR (50) NOT NULL,
             email VARCHAR (50) UNIQUE NOT NULL)`
         );
-        return response.status(HTTP_STATUS_CODE.OK).send({
+        return response.status(HTTP_STATUS_CODE.CREATED).send({
             result: result,
-            status: HTTP_STATUS_CODE.OK,
+            status: HTTP_STATUS_CODE.CREATED,
             message: "Table created successfully"
         })
     }
@@ -28,9 +28,9 @@ export const addColumns = async (request,response) => {
         const [result] = await db.sequelize.query(`ALTER TABLE users
             ADD password VARCHAR (50) NOT NULL`
         );
-        return response.status(HTTP_STATUS_CODE.OK).send({
+        return response.status(HTTP_STATUS_CODE.CREATED).send({
             result: result,
-            status: HTTP_STATUS_CODE.OK,
+            status: HTTP_STATUS_CODE.CREATED,
             message: "Column added successfully"
         })
     }
